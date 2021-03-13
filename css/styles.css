@@ -1,12 +1,12 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --accent-text-color: #2196f3;
+  --accent-color: #2196f3;
   --dark-bg-text-color: #ffffff;
-
-  --primary-color: ;
+  --primary-color: #e5e5e5;
   --accent-button-color: #188ce8;
   --dark-bg-color: #2f303a;
+  --team-bg-color: #f5f4fa;
 }
 
 body {
@@ -19,6 +19,10 @@ body {
   color: var(--primary-text-color);
 }
 
+address {
+  font-style: normal;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -29,18 +33,17 @@ body {
   width: 1px !important;
   overflow: hidden;
 }
-Web::first-letter {
-  color: var(--accent-text-color);
-}
 
 .logo {
-  color: #000000;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  color: var(--accent-color);
   text-decoration: none;
+}
+.accent {
+  color: #000000;
 }
 
 .link {
@@ -50,14 +53,14 @@ Web::first-letter {
 
 .link:hover,
 .link:focus {
-  color: var(--accent-text-color);
+  color: var(--accent-color);
 }
 
 .list {
   list-style: none;
 }
 
-.header {
+.menu-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -65,16 +68,16 @@ Web::first-letter {
   color: var(--title-text-color);
 }
 
-.emaile-phone {
+.e-maile-phone {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.emaile-phone:hover,
-.emaile-phone:hover {
-  color: var(--accent-text-color);
+.e-maile-phone:hover,
+.e-maile-phone:focus {
+  color: var(--accent-color);
 }
 
 .button {
@@ -84,7 +87,7 @@ Web::first-letter {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--dark-bg-text-color);
-  background-color: var(--accent-text-color);
+  background-color: var(--accent-color);
   display: flex;
   align-items: center;
   text-align: center;
@@ -95,15 +98,24 @@ Web::first-letter {
   background-color: var(--accent-button-color);
 }
 
-.button-portfolio {
+.filter-button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
   cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--dark-bg-text-color);
+}
+
+.dark-bg {
+  background-color: var(--dark-bg-color);
+  color: var(--dark-bg-text-color);
 }
 
 .page-title {
@@ -121,11 +133,17 @@ Web::first-letter {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
-.section-title-portfolio {
+.feature-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -133,45 +151,61 @@ Web::first-letter {
   color: var(--title-text-color);
 }
 
-.section-title-features {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-text-color);
+.team-bg {
+  background-color: var(--team-bg-color);
 }
 
-.section-title-team {
+.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
-.section-title-post {
-  font-weight: 400;
+.team-post {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
-.
+.type-portfolio {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.accent-logo-footer {
+  color: var(--dark-bg-text-color);
+}
+
+.address-footer {
+  color: var(--dark-bg-text-color);
+}
+
+.e-mail-phone-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
 
 /* Навигация сайта */
 
 .site-nav .link {
-  color: var(--accent color);
+  color: var(--title-text-color);
 }
 
-.site-nav .link:current {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 
-.dark-bg {
-  background-color: var(--dark-bg-color);
-  color: var(--dark-bg-text-color);
+.site-nav .link.current {
+  color: var(--accent-color);
 }
