@@ -3,7 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --dark-bg-text-color: #ffffff;
-  --primary-color: #e5e5e5;
+  /*--primary-color: #e5e5e5;*/
   --accent-button-color: #188ce8;
   --dark-bg-color: #2f303a;
   --team-bg-color: #f5f4fa;
@@ -15,7 +15,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  background-color: var(--primary-color);
+  /*background-color: var(--primary-color);*/
   color: var(--primary-text-color);
 }
 
@@ -105,6 +105,7 @@ address {
   line-height: 1.62;
   text-align: center;
   color: var(--title-text-color);
+  background-color: var(--team-bg-color);
   cursor: pointer;
 }
 .filter-button:hover,
